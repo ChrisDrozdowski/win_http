@@ -507,8 +507,8 @@ namespace win_http {
 		if (total_read > 0) {
 			if (response_buffer) {
 				params.response_body(std::vector<char>(response_buffer, response_buffer + total_read));
-				//free(response_buffer);
-				//response_buffer = nullptr;
+				free(response_buffer);
+				response_buffer = nullptr;
 			}
 		}
 
