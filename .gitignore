@@ -1,32 +1,29 @@
-# Prerequisites
-*.d
+# Whitelist-based approach to files and directories associated with this project.
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# First ignore everything.
+*
 
-# Precompiled Headers
-*.gch
-*.pch
+# Whitelist directories.
+!*/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Whitelist basic Git files.
+!.gitignore
+!LICENSE
+!*.md
 
-# Fortran module files
-*.mod
-*.smod
+# Whitelist Visual Studio files.
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Whitelist source code files.
+!*.hpp
+!*.h
+!*.c
+!*.cpp
+!*.tlb
+!*.ico
+!*.rc
 
-# Executables
-*.exe
-*.out
-*.app
+# Whitelist other files
+!*.txt
